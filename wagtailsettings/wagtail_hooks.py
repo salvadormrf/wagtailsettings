@@ -22,6 +22,6 @@ def construct_main_menu(request, menu_items):
         menu_items.append(MenuItem(
             _('Settings'),
             urlresolvers.reverse('wagtailsettings_index'),
-            classnames='icon icon-cogs',
+            classnames='icon icon-cog',
             order=1000
         ))
