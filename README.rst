@@ -1,4 +1,5 @@
 (Clone of https://bitbucket.org/takeflight/wagtailsettings)
+(Has some minor modifications)
 
 ===============
 wagtailsettings 
