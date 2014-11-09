@@ -1,5 +1,7 @@
+(Clone of https://bitbucket.org/takeflight/wagtailsettings)
+
 ===============
-wagtailsettings (Clone of https://bitbucket.org/takeflight/wagtailsettings)
+wagtailsettings 
 ===============
 
 A plugin for Wagtail that provides add developer-defined settings to the admin.
@@ -18,7 +20,7 @@ Add it to your ``INSTALLED_APPS``:
 .. code:: python
 
     INSTALLED_APPS += [
-        'wagtailnews',
+        'wagtailsettings',
     ]
 
 
