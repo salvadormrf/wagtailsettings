@@ -1,4 +1,5 @@
-(Clone of https://bitbucket.org/takeflight/wagtailsettings)
+(**Fork** of https://bitbucket.org/takeflight/wagtailsettings)
+
 (Has some minor modifications)
 
 ===============
@@ -33,18 +34,23 @@ and register it using the ``register_setting`` decorator:
 
 .. code:: python
 
-    from wagtailnews.models import BaseSetting, register_setting
+    from wagtailsettings.models import BaseSetting, register_setting
 
     @register_setting
     class SocialMediaSettings(BaseSetting):
         facebook = models.URLField(
-            help_text='Your Facebook page URL')
+            help_text='Your Facebook page URL'
+        )
         instagram = models.CharField(
-            max_length=255, help_text='Your Instagram username, without the @')
+            max_length=255, 
+            help_text='Your Instagram username, without the @'
+        )
         trip_advisor = models.URLField(
-            help_text='Your Trip Advisor page URL')
+            help_text='Your Trip Advisor page URL'
+        )
         youtube = models.URLField(
-            help_text='Your YouTube channel or user account URL')
+            help_text='Your YouTube channel or user account URL'
+        )
 
 
 A 'Settings' link will appear in the Wagtail admin,
