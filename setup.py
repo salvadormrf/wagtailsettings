@@ -24,7 +24,10 @@ setup(
     author_email='tim@takeflight.com.au',
     url='https://bitbucket.org/takeflight/wagtailsettings',
 
-    install_requires=['wagtail>=0.6'],
+    install_requires=[],
+    extras_require={
+        'full': ['wagtail>=0.6'],
+    },
     zip_safe=False,
     license='BSD License',
 
